@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    /* Đặt các kiểu dáng cơ bản */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #000;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      margin: 0 10px;
+    }
+
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 1311px;
+      height: 456px;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      margin-bottom: 20px;
+      color: #e10600;
+    }
+
+    .values {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .value-item {
+      margin: 10px;
+      width: 300px;
+    }
+
+    .value-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .footer {
+      padding: 10px 20px;
+      text-align: center;
+      background-color: #000;
+    }
+    
+    .ava {
+        width: 187px;
+        height: 50px;
+  </style>
+</head>
+<body>
+  <!-- Thanh điều hướng -->
+  <div class="navbar">
+    <h1 class="ava">Tên/avatar</h1>
+    <a href="https://codehs.com/editor/html/14915797/4933576/index.html">Home</a>
+    <a href="#">About Us</a>
+    <a href="https://codehs.com/editor/html/14931487/4933576/index.html">About Game</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Phần giới thiệu -->
+  <div class="hero">
+    <img src="https://i.pinimg.com/236x/84/34/2e/84342e18f1e12d171d9b39fdc39dc0ff.jpg" alt="Classic and Modern Cars">
+    <div class="hero-text">ABOUT US</div>
+  </div>
+
+  <!-- Nội dung chính -->
+  <div class="content">
+    <h2>Team ...</h2>
+    <p>
+      chúng tôi là đội ngũ làm game của game ...
+    </p>
+
+    <h2>Game của team ...</h2>
+    <div class="values">
+      <div class="value-item">
+        <img src="https://i.pinimg.com/236x/e6/34/d3/e634d384fb0c31d7245d70d6f70f830d.jpg" alt="Racing Team">
+      </div>
+      <div class="value-item">
+        <img src="https://i.pinimg.com/236x/84/34/2e/84342e18f1e12d171d9b39fdc39dc0ff.jpg" alt="Engineering">
+      </div>
+      <div class="value-item">
+        <img src="https://i.pinimg.com/236x/28/a1/dc/28a1dceeca7e5e4e030cd9db501f1bad.jpg" alt="Fans">
+        
+      </div>
+      <p>Tựa Game thuộc thể loại... gì đó (ko giỏi văn) <a href="">tìm hiểu thêm...</a></p>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    &copy; 2024 Team ...
+  </div>
+</body>
+</html>

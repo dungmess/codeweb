@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari Website</title>
+  <style>
+    /* Reset mặc định */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Navbar Styles */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff0000;
+    }
+
+    nav .search {
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* Hero Section Styles */
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: white;
+      z-index: 3;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Đặt lại vị trí nút "Get Started" */
+    .get-started-btn {
+      z-index: 3;
+      padding: 10px 30px;
+      font-size: 20px;
+      color: white;
+      background-color: #ff0000;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+
+      /* Chỉnh vị trí chính giữa ảnh/video */
+      position: absolute;
+      bottom: 20%; /* Cách đáy một khoảng 20% */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .get-started-btn:hover {
+      background-color: #cc0000;
+      transform: scale(1.1);
+    }
+
+    /* Arrow buttons for navigation */
+    .arrows {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 3;
+    }
+
+    .arrow {
+      font-size: 40px;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+      margin: 0 20px;
+    }
+
+    .arrow:hover {
+      color: #ff0000;
+    }
+
+    /* Image Slider */
+    .slider {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      height: 50vh;
+    }
+
+    .slider img {
+      min-width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="https://codehs.com/editor/html/14915797/4933576/index.html">Home</a></li>
+            <li><a href="https://codehs.com/editor/html/14931289/4933576/index.html">About Us</a></li>
+            <li><a href="https://codehs.com/editor/html/14931487/4933576/index.html">About Game</a></li>
+            <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="search">Search</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <video autoplay loop muted>
+      <source src="https://codehs.com/uploads/996a629ff50acc74ad33098a4a4b30ba" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h1>Welcome to Ferrari</h1>
+    <a href="https://www.roblox.com/vi/home" class="get-started-btn">Get Started</a>
+  </section>
+</body>
+</html>
